@@ -11,11 +11,10 @@
  * Crea una variable htmlLogin que contendrá el formulario
  * de login.
  */
-function pintarLogin() {
-    let loginHtml = `
+ function pintarLogin() {
+    return(
         <div class="row g-0">
 
-            <!--login-->
             <div class="col-lg-6">
                 <div class="card-body p-md-5 mx-md-4">
 
@@ -40,7 +39,7 @@ function pintarLogin() {
 
                         <div class="text-center pt-1 mb-4 pb-1">
                             <button class="btn btn-primary btn-lg btn-block fa-lg gradient-custom-2 mb-3" type="button" onclick="entrarUser()">Entrar</button><br />
-                            ¿No tienes una cuenta?<br>
+                            ¿No tienes una cuenta?<br/>
                             Crea una <a class="text-muted" href="new.html">Aquí</a>.
                         </div>
 
@@ -49,7 +48,6 @@ function pintarLogin() {
                 </div>
             </div>
 
-            <!--info zorrillo-->
             <div class="card-body rounded col-lg-6 d-flex align-items-center gradient-custom-2">
                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                     <h4 class="mb-4">Somos más que una compañía</h4>
@@ -59,11 +57,11 @@ function pintarLogin() {
             </div>
 
         </div>
-    `;
-    $("#mainCard").html(loginHtml);
+    );
+
 }
 
-function habilitarUser(){
+/** function habilitarUser(){
     let correo = $("#email").val();
     let clave = $("#password").val();
 
@@ -127,14 +125,14 @@ function entrarUser() {
         alert(alerta);
         alerta = "";
     }
-}
+}*/
 
 /**
  * Esta función descarga el html base al iniciar
  * la página web.
  */
-$(document).ready(function() {
+/*$(document).ready(function() {
     pintarLogin();
 });
-
+*/
 
