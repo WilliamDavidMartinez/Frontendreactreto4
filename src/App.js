@@ -1,5 +1,8 @@
 import react from 'react';
 import './App.css';
+/* import './css/bootstrap.min.css'; */
+import 'bootstrap/dist/css/bootstrap.css';
+import './css/style.css';
 
 function App() {
   return (
@@ -9,7 +12,7 @@ function App() {
                   <div className="card-body p-md-5 mx-md-4">
 
                       <div className="text-center">
-                          <img src="img/zorrillo.png" style={{width:'185px'}} alt="logo" />
+                          <img src={require("./img/zorrillo.png")} style={{width:'185px'}} alt="logo" />
                           <h4 className="mt-1 mb-5 pb-1">Zorrillo LTDA</h4>
                       </div>
 
