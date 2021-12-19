@@ -1,8 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Login from './login';
+
+
+
+
+function App() {
+  return (
+        <section className="h-100 gradient-form" style={{backgroundColor: '#eee'}}>
+            <div className="container py-5 h-100">
+                <div className="row d-flex justify-content-center align-items-center h-100">
+                    <div className="col-xl-10">
+                        <div className="card rounded-3" id="mainCard">
+                          {Login()}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  );
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +28,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
